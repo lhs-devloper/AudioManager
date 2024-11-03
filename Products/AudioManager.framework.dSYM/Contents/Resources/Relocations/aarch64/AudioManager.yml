@@ -1,0 +1,19 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/leehyeonseo/Desktop/AudioManager/AudioManager/Products/AudioManager.framework/AudioManager'
+relocations:
+  - { offset: 0x57355, size: 0x8, addend: 0x0, symName: _AudioManagerVersionString, symObjAddr: 0x0, symBinAddr: 0xAC70, symSize: 0x0 }
+  - { offset: 0x57389, size: 0x8, addend: 0x0, symName: _AudioManagerVersionNumber, symObjAddr: 0x38, symBinAddr: 0xACA8, symSize: 0x0 }
+  - { offset: 0x573CA, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x524 }
+  - { offset: 0x573EE, size: 0x8, addend: 0x0, symName: '_$s12AudioManager05audioB0A2ACvp', symObjAddr: 0x37F0, symBinAddr: 0xCAA0, symSize: 0x0 }
+  - { offset: 0x574B1, size: 0x8, addend: 0x0, symName: '_$s12AudioManager05audioB0_WZ', symObjAddr: 0x5E8, symBinAddr: 0x85E8, symSize: 0x28 }
+  - { offset: 0x57508, size: 0x8, addend: 0x0, symName: _loadAudio, symObjAddr: 0x610, symBinAddr: 0x8610, symSize: 0x94 }
+  - { offset: 0x5754A, size: 0x8, addend: 0x0, symName: '_$s12AudioManager04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x6A4, symBinAddr: 0x86A4, symSize: 0x94 }
+  - { offset: 0x57576, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAACMa', symObjAddr: 0x738, symBinAddr: 0x8738, symSize: 0x20 }
+  - { offset: 0x5758A, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x758, symBinAddr: 0x8758, symSize: 0x40 }
+  - { offset: 0x5759E, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOh', symObjAddr: 0x798, symBinAddr: 0x8798, symSize: 0x40 }
+  - { offset: 0x575B2, size: 0x8, addend: 0x0, symName: '_$sSo12AVPlayerItemCMa', symObjAddr: 0x7D8, symBinAddr: 0x87D8, symSize: 0x3C }
+  - { offset: 0x57789, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x524 }
+  - { offset: 0x578F0, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC22playerDidFinishPlayingyyFTo', symObjAddr: 0x524, symBinAddr: 0x8524, symSize: 0xA0 }
+  - { offset: 0x57944, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAACfD', symObjAddr: 0x5C4, symBinAddr: 0x85C4, symSize: 0x24 }
+...
