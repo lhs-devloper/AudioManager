@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AudioManager",
         "declAttributes": [
@@ -45,12 +45,199 @@
         "moduleName": "AudioManager",
         "declAttributes": [
           "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "playAudio",
+        "printedName": "playAudio()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)playAudio",
+        "mangledName": "$s12AudioManager04playA0yyF",
+        "moduleName": "AudioManager",
+        "declAttributes": [
+          "AccessControl",
           "CDecl"
         ],
         "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "pauseAudio",
+        "printedName": "pauseAudio()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)pauseAudio",
+        "mangledName": "$s12AudioManager05pauseA0yyF",
+        "moduleName": "AudioManager",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "registGPS",
+        "printedName": "registGPS(registLocation:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Swift.Float]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "usr": "s:Sa"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)registGPSWithRegistLocation:",
+        "mangledName": "$s12AudioManager9registGPS0C8LocationySaySfG_tF",
+        "moduleName": "AudioManager",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "checkGPS",
+        "printedName": "checkGPS()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[[Swift.Float]]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Float]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "usr": "s:Sa"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)checkGPS",
+        "mangledName": "$s12AudioManager8checkGPSSaySaySfGGyF",
+        "moduleName": "AudioManager",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "returnGPS",
+        "printedName": "returnGPS()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)returnGPS",
+        "mangledName": "$s12AudioManager9returnGPSyyF",
+        "moduleName": "AudioManager",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AudioManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AudioManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "AudioManager"
       }
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/leehyeonseo\/Desktop\/AudioManager\/AudioManager\/AudioManager\/GPSManager.swift",
+      "kind": "Array",
+      "offset": 275,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/leehyeonseo\/Desktop\/AudioManager\/AudioManager\/AudioManager\/GPSManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 329,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/leehyeonseo\/Desktop\/AudioManager\/AudioManager\/AudioManager\/GPSManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 381,
+      "length": 3,
+      "value": "0.0"
+    }
+  ]
 }

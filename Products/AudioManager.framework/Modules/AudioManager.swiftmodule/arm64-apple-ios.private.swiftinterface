@@ -3,9 +3,21 @@
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AudioManager
 import AVFoundation
 @_exported import AudioManager
+import CoreLocation
+import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_cdecl("loadAudio")
 public func loadAudio(audioName: Swift.UnsafePointer<Swift.CChar>)
+@_cdecl("playAudio")
+public func playAudio()
+@_cdecl("pauseAudio")
+public func pauseAudio()
+@_cdecl("registGPS")
+public func registGPS(registLocation: Swift.Array<Swift.Float>)
+@_cdecl("checkGPS")
+public func checkGPS() -> Swift.Array<Swift.Array<Swift.Float>>
+@_cdecl("returnGPS")
+public func returnGPS()

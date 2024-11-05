@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D064750D2CD81488009E7194 /* AudioManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06475022CD81488009E7194 /* AudioManager.framework */; };
+		D0B0B8722CD99A0C001581FC /* LoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B8712CD99A0C001581FC /* LoadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		D06475022CD81488009E7194 /* AudioManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D064750C2CD81488009E7194 /* AudioManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B0B8712CD99A0C001581FC /* LoadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -73,6 +75,7 @@
 		D06474F82CD81488009E7194 = {
 			isa = PBXGroup;
 			children = (
+				D0B0B8712CD99A0C001581FC /* LoadManager.swift */,
 				D06475042CD81488009E7194 /* AudioManager */,
 				D06475102CD81488009E7194 /* AudioManagerTests */,
 				D06475032CD81488009E7194 /* Products */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B0B8722CD99A0C001581FC /* LoadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

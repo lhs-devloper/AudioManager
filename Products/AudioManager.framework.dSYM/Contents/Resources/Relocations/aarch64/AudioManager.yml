@@ -2,18 +2,41 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/leehyeonseo/Desktop/AudioManager/AudioManager/Products/AudioManager.framework/AudioManager'
 relocations:
-  - { offset: 0x57355, size: 0x8, addend: 0x0, symName: _AudioManagerVersionString, symObjAddr: 0x0, symBinAddr: 0xAC70, symSize: 0x0 }
-  - { offset: 0x57389, size: 0x8, addend: 0x0, symName: _AudioManagerVersionNumber, symObjAddr: 0x38, symBinAddr: 0xACA8, symSize: 0x0 }
-  - { offset: 0x573CA, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x524 }
-  - { offset: 0x573EE, size: 0x8, addend: 0x0, symName: '_$s12AudioManager05audioB0A2ACvp', symObjAddr: 0x37F0, symBinAddr: 0xCAA0, symSize: 0x0 }
-  - { offset: 0x574B1, size: 0x8, addend: 0x0, symName: '_$s12AudioManager05audioB0_WZ', symObjAddr: 0x5E8, symBinAddr: 0x85E8, symSize: 0x28 }
-  - { offset: 0x57508, size: 0x8, addend: 0x0, symName: _loadAudio, symObjAddr: 0x610, symBinAddr: 0x8610, symSize: 0x94 }
-  - { offset: 0x5754A, size: 0x8, addend: 0x0, symName: '_$s12AudioManager04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x6A4, symBinAddr: 0x86A4, symSize: 0x94 }
-  - { offset: 0x57576, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAACMa', symObjAddr: 0x738, symBinAddr: 0x8738, symSize: 0x20 }
-  - { offset: 0x5758A, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x758, symBinAddr: 0x8758, symSize: 0x40 }
-  - { offset: 0x5759E, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOh', symObjAddr: 0x798, symBinAddr: 0x8798, symSize: 0x40 }
-  - { offset: 0x575B2, size: 0x8, addend: 0x0, symName: '_$sSo12AVPlayerItemCMa', symObjAddr: 0x7D8, symBinAddr: 0x87D8, symSize: 0x3C }
-  - { offset: 0x57789, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x524 }
-  - { offset: 0x578F0, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC22playerDidFinishPlayingyyFTo', symObjAddr: 0x524, symBinAddr: 0x8524, symSize: 0xA0 }
-  - { offset: 0x57944, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAACfD', symObjAddr: 0x5C4, symBinAddr: 0x85C4, symSize: 0x24 }
+  - { offset: 0x58D0D, size: 0x8, addend: 0x0, symName: _AudioManagerVersionString, symObjAddr: 0x0, symBinAddr: 0x7F10, symSize: 0x0 }
+  - { offset: 0x58D42, size: 0x8, addend: 0x0, symName: _AudioManagerVersionNumber, symObjAddr: 0x38, symBinAddr: 0x7F48, symSize: 0x0 }
+  - { offset: 0x58DA3, size: 0x8, addend: 0x0, symName: '_$s12AudioManager05audioB0A2ACvp', symObjAddr: 0x4958, symBinAddr: 0xD630, symSize: 0x0 }
+  - { offset: 0x58DE0, size: 0x8, addend: 0x0, symName: '_$s12AudioManager03gpsB0AA10GPSManagerCvp', symObjAddr: 0x4960, symBinAddr: 0xD638, symSize: 0x0 }
+  - { offset: 0x58E6E, size: 0x8, addend: 0x0, symName: '_$s12AudioManager05audioB0_WZ', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x2C }
+  - { offset: 0x58E96, size: 0x8, addend: 0x0, symName: '_$s12AudioManager03gpsB0_WZ', symObjAddr: 0x2C, symBinAddr: 0x402C, symSize: 0x30 }
+  - { offset: 0x58EF5, size: 0x8, addend: 0x0, symName: _loadAudio, symObjAddr: 0x5C, symBinAddr: 0x405C, symSize: 0x94 }
+  - { offset: 0x58F37, size: 0x8, addend: 0x0, symName: '_$s12AudioManager04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0xF0, symBinAddr: 0x40F0, symSize: 0x94 }
+  - { offset: 0x58F63, size: 0x8, addend: 0x0, symName: _registGPS, symObjAddr: 0x334, symBinAddr: 0x42A8, symSize: 0x30 }
+  - { offset: 0x59009, size: 0x8, addend: 0x0, symName: '_$s12AudioManager9registGPS0C8LocationySaySfG_tF', symObjAddr: 0x364, symBinAddr: 0x42D8, symSize: 0x124 }
+  - { offset: 0x59191, size: 0x8, addend: 0x0, symName: _checkGPS, symObjAddr: 0x488, symBinAddr: 0x43FC, symSize: 0xC0 }
+  - { offset: 0x59212, size: 0x8, addend: 0x0, symName: '_$s12AudioManager8checkGPSSaySaySfGGyF', symObjAddr: 0x548, symBinAddr: 0x44BC, symSize: 0x90 }
+  - { offset: 0x5928E, size: 0x8, addend: 0x0, symName: _returnGPS, symObjAddr: 0x5D8, symBinAddr: 0x454C, symSize: 0x8C }
+  - { offset: 0x592C6, size: 0x8, addend: 0x0, symName: '_$s12AudioManager9returnGPSyyF', symObjAddr: 0x664, symBinAddr: 0x45D8, symSize: 0x8C }
+  - { offset: 0x59356, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSaySfG_Tg5', symObjAddr: 0x718, symBinAddr: 0x4664, symSize: 0x128 }
+  - { offset: 0x5946C, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x840, symBinAddr: 0x478C, symSize: 0x40 }
+  - { offset: 0x5970E, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x0, symBinAddr: 0x47CC, symSize: 0x524 }
+  - { offset: 0x59976, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAACMa', symObjAddr: 0x5E8, symBinAddr: 0x4DB4, symSize: 0x20 }
+  - { offset: 0x5998A, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOh', symObjAddr: 0x648, symBinAddr: 0x4DD4, symSize: 0x40 }
+  - { offset: 0x5999E, size: 0x8, addend: 0x0, symName: '_$sSo12AVPlayerItemCMa', symObjAddr: 0x688, symBinAddr: 0x4E14, symSize: 0x3C }
+  - { offset: 0x599BF, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC04loadA09audioNameySPys4Int8VG_tF', symObjAddr: 0x0, symBinAddr: 0x47CC, symSize: 0x524 }
+  - { offset: 0x59B2B, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAAC22playerDidFinishPlayingyyFTo', symObjAddr: 0x524, symBinAddr: 0x4CF0, symSize: 0xA0 }
+  - { offset: 0x59B79, size: 0x8, addend: 0x0, symName: '_$s12AudioManagerAACfD', symObjAddr: 0x5C4, symBinAddr: 0x4D90, symSize: 0x24 }
+  - { offset: 0x59C66, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerCACycfc', symObjAddr: 0x0, symBinAddr: 0x4E50, symSize: 0x174 }
+  - { offset: 0x59F1A, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerCfETo', symObjAddr: 0x4E8, symBinAddr: 0x5338, symSize: 0x38 }
+  - { offset: 0x59F49, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerCMa', symObjAddr: 0x520, symBinAddr: 0x5370, symSize: 0x20 }
+  - { offset: 0x5A044, size: 0x8, addend: 0x0, symName: '_$sSo10CLLocationCMa', symObjAddr: 0xA88, symBinAddr: 0x5898, symSize: 0x3C }
+  - { offset: 0x5A12C, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiFSo10CLLocationC_Tg5', symObjAddr: 0x540, symBinAddr: 0x5390, symSize: 0x1E4 }
+  - { offset: 0x5A1FB, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerCACycfc', symObjAddr: 0x0, symBinAddr: 0x4E50, symSize: 0x174 }
+  - { offset: 0x5A298, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerCACycfcTo', symObjAddr: 0x174, symBinAddr: 0x4FC4, symSize: 0x20 }
+  - { offset: 0x5A2D8, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerC08locationB0_18didUpdateLocationsySo010CLLocationB0C_SaySo0H0CGtFTo', symObjAddr: 0x194, symBinAddr: 0x4FE4, symSize: 0x78 }
+  - { offset: 0x5A309, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerC08locationB0_16didFailWithErrorySo010CLLocationB0C_s0H0_ptFTo', symObjAddr: 0x20C, symBinAddr: 0x505C, symSize: 0x68 }
+  - { offset: 0x5A369, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerC08locationB0_22didChangeAuthorizationySo010CLLocationB0C_So21CLAuthorizationStatusVtFTo', symObjAddr: 0x274, symBinAddr: 0x50C4, symSize: 0x94 }
+  - { offset: 0x5A426, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerC9returnGPSyyF', symObjAddr: 0x308, symBinAddr: 0x5158, symSize: 0x1B0 }
+  - { offset: 0x5A601, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerCfD', symObjAddr: 0x4B8, symBinAddr: 0x5308, symSize: 0x30 }
+  - { offset: 0x5A677, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerC08locationB0_18didUpdateLocationsySo010CLLocationB0C_SaySo0H0CGtFTf4dnn_n', symObjAddr: 0x724, symBinAddr: 0x5574, symSize: 0x234 }
+  - { offset: 0x5A964, size: 0x8, addend: 0x0, symName: '_$s12AudioManager10GPSManagerC08locationB0_16didFailWithErrorySo010CLLocationB0C_s0H0_ptFTf4dnd_n', symObjAddr: 0x958, symBinAddr: 0x57A8, symSize: 0xF0 }
 ...
