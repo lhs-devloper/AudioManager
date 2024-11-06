@@ -34,13 +34,13 @@ public func pauseAudio(){
 
 // GPS Logic
 @_cdecl("registGPS")
-public func registGPS(registLocation: Array<Float>){
+public func registGPS(registLocation: UnsafePointer<CChar>){
     NSLog("registGPS!!!!");
-    gpsManager.registGPS(registLocation: registLocation)
+    gpsManager.registGPS(unsafeJsonString: registLocation)
 }
 
 @_cdecl("checkGPS")
-public func checkGPS() -> Array<Array<Float>>{
+public func checkGPS(){
     NSLog("checkGPS!!!!");
     return gpsManager.checkGPS();
 }

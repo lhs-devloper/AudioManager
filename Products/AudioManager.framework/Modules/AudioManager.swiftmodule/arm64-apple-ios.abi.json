@@ -104,22 +104,22 @@
           },
           {
             "kind": "TypeNominal",
-            "name": "Array",
-            "printedName": "[Swift.Float]",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
               }
             ],
-            "usr": "s:Sa"
+            "usr": "s:SP"
           }
         ],
         "declKind": "Func",
         "usr": "c:(cm)registGPSWithRegistLocation:",
-        "mangledName": "$s12AudioManager9registGPS0C8LocationySaySfG_tF",
+        "mangledName": "$s12AudioManager9registGPS0C8LocationySPys4Int8VG_tF",
         "moduleName": "AudioManager",
         "declAttributes": [
           "AccessControl",
@@ -135,30 +135,13 @@
         "children": [
           {
             "kind": "TypeNominal",
-            "name": "Array",
-            "printedName": "[[Swift.Float]]",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Float]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "usr": "s:Sa"
+            "name": "Void",
+            "printedName": "()"
           }
         ],
         "declKind": "Func",
         "usr": "c:(cm)checkGPS",
-        "mangledName": "$s12AudioManager8checkGPSSaySaySfGGyF",
+        "mangledName": "$s12AudioManager8checkGPSyyF",
         "moduleName": "AudioManager",
         "declAttributes": [
           "AccessControl",

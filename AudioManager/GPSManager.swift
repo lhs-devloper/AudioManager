@@ -46,7 +46,7 @@ class GPSManager: NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         print("Location updated: \(location.coordinate.latitude), \(location.coordinate.longitude)")
-        
+        print("================================")
         
         // 여기에 서버로 위치 데이터를 전송하거나 다른 처리를 할 수 있습니다.
         latitude = location.coordinate.latitude;
@@ -65,16 +65,29 @@ class GPSManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    public func registGPS(registLocation: Array<Float>){
-        geoList.append(registLocation)
+    public func registGPS(unsafeJsonString: UnsafePointer<CChar>){
+        let jsonString = String(cString: unsafeJsonString);
+        if let data = jsonString.data(using: .utf8) {
+            do {
+                if let floatArray = try JSONSerialization.jsonObject(with: data, options: []) as? [Float] {
+                    geoList.append(floatArray)
+                }
+                print("등록되었습니다.")
+                print("================================")
+            } catch {
+                print("Error parsing JSON: \(error)")
+            }
+        }
+        
     }
     
-    public func checkGPS() -> Array<Array<Float>>{
-        return geoList;
+    public func checkGPS(){
+
     }
     
     public func returnGPS(){
         print("Location latitude: \(latitude)")
         print("Location longitude: \(longitude)")
+        print("================================")
     }
 }
