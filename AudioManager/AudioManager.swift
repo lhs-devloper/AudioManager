@@ -27,6 +27,20 @@ class AudioManager{
             }else{
                 player!.replaceCurrentItem(with: playerItem)
             }
+        } else if let wavURL = Bundle(for: AudioManager.self).url(forResource: stringName, withExtension: "wav") {
+            let playerItem = AVPlayerItem(url: wavURL)
+            if player == nil {
+                player = AVPlayer(playerItem: playerItem)
+                player?.play();
+                NotificationCenter.default.addObserver(
+                    self,
+                    selector: #selector(playerDidFinishPlaying),
+                    name: .AVPlayerItemDidPlayToEndTime,
+                    object: player?.currentItem
+                )
+            }else{
+                player!.replaceCurrentItem(with: playerItem)
+            }
         }
         do{
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default);

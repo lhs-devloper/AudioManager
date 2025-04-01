@@ -6,6 +6,7 @@ import AVFoundation
 import CoreLocation
 import Foundation
 import Swift
+import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -17,7 +18,9 @@ public func playAudio()
 public func pauseAudio()
 @_cdecl("registGPS")
 public func registGPS(registLocation: Swift.UnsafePointer<Swift.CChar>)
-@_cdecl("checkGPS")
-public func checkGPS()
+@_cdecl("deleteGPS")
+public func deleteGPS(region: Swift.UnsafePointer<Swift.CChar>) -> Swift.Bool
 @_cdecl("returnGPS")
-public func returnGPS()
+public func returnGPS() -> Swift.UnsafePointer<Swift.CChar>?
+@_cdecl("localPush")
+public func localPush(title: Swift.UnsafePointer<Swift.CChar>, body: Swift.UnsafePointer<Swift.CChar>)

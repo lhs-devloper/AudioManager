@@ -30,6 +30,9 @@
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		D06475142CD81488009E7194 /* Exceptions for "AudioManager" folder in "AudioManager" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Audio/audio.mp3,
+			);
 			publicHeaders = (
 				AudioManager.h,
 			);

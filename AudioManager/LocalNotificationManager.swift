@@ -1,4 +1,5 @@
 import Foundation
+import AVFoundation
 import UserNotifications
 
 struct Notification {
@@ -6,62 +7,64 @@ struct Notification {
     var title: String
 }
 
-class LocalNotificationManager {
-    var notifications = [Notification]()
+class LocalNotificationManager: NSObject, UNUserNotificationCenterDelegate {
+
+    private var notificationCenter: UNUserNotificationCenter?
     
-    func requestPermission() -> Void {
-        UNUserNotificationCenter
-            .current()
-            .requestAuthorization(options: [.alert, .badge, .alert]) { granted, error in
-                if granted == true && error == nil {
-                    //we have permission!
-                }
-            }
+    override init() {
+        super.init()
+        
+        notificationCenter = UNUserNotificationCenter.current();
+        notificationCenter?.delegate = self;
+        
+        requestNotificationAuthorization()
+//        sendNotification(title: "ㅇㅇ", body: "ㅇㅇ", seconds: 2.0)
     }
     
-    func addNotification(title: String) -> Void {
-        notifications.append(Notification(id: UUID().uuidString, title: title))
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                    didReceive response: UNNotificationResponse,
+                                    withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                    willPresent notification: UNNotification,
+                                    withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .badge, .sound])
     }
     
-    func schedule() -> Void {
-        UNUserNotificationCenter.current().getNotificationSettings { settings in
-            switch settings.authorizationStatus {
-            case .notDetermined:
-                self.requestPermission()
-            case .authorized, .provisional:
-                self.scheduleNotifications()
-            default:
-                break
-            }
-        }
-    }
-    
-    func scheduleNotifications() -> Void {
-        for notification in notifications {
-            //🗓️ 날짜 설정
-            var dateComponents = DateComponents()
-            dateComponents.calendar = Calendar.current
-            dateComponents.weekday = 4 // Wednesday
-            dateComponents.hour = 19 // 14:00
-            
-            let content = UNMutableNotificationContent()
-            content.title = notification.title
-            content.sound = UNNotificationSound.default
-            content.subtitle = "약 먹을 시간이에요.💊"
-            content.body = "먹었다고 체크하기"
-            content.summaryArgument = "summary argument"
-            content.summaryArgumentCount = 40
-            
-//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-            let request = UNNotificationRequest(identifier: notification.id, content: content, trigger: trigger)
-            
-            UNUserNotificationCenter.current().add(request) { error in
-                guard error == nil else { return }
-                print("scheduling notification with id:\(notification.id)")
+    func requestNotificationAuthorization() {
+        let authOptions = UNAuthorizationOptions(arrayLiteral: .alert, .badge, .sound)
+
+        notificationCenter?.requestAuthorization(options: authOptions) { success, error in
+            if let error = error {
+                print("Error: \(error)")
             }
         }
     }
     
-    
+    func sendNotification(title: UnsafePointer<CChar>,
+                          body: UnsafePointer<CChar>,
+                          seconds: Double) {
+        let notificationContent = UNMutableNotificationContent()
+
+        notificationContent.title = String(cString: title)
+        notificationContent.body = String(cString: body)
+        
+//        notificationContent.title = title
+//        notificationContent.body = body
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: seconds, repeats: false)
+        let request = UNNotificationRequest(identifier: "testNotification",
+                                            content: notificationContent,
+                                            trigger: trigger)
+
+        notificationCenter?.add(request) { error in
+            if let error = error {
+                print("Notification Error: ", error)
+            }
+        }
+        
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+    }
 }
